@@ -7,7 +7,7 @@ import com.github.raftimpl.raft.proto.RaftProto;
 import com.github.raftimpl.raft.service.RaftConsensusServiceAsync;
 
 /**
- * Created by raftimpl on 2017/5/5.
+ * Created by raftimpl on 2023/5/5.
  */
 public class Peer {
     private RaftProto.Server server;
