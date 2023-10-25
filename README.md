@@ -1,6 +1,19 @@
 # raft-java
-Raft implementation library for Java.<br>
-https://github.com/logcabin/logcabin。
+The project described is a distributed Key-Value storage system with the following key features and functionalities:
+
+1. **High Availability and Strong Consistency**: The system implements the Raft consensus algorithm to ensure strong data consistency and automatically select a new leader in case of node failures to maintain high availability.
+
+2. **Raft Algorithm Implementation**: The project is built upon the Raft paper, implementing core Raft algorithm features, including leader election, log replication, and snapshot updates, ensuring reliable data replication and persistence.
+
+3. **Multi-Raft Architecture**: Data is partitioned into multiple shards, managed using a Multi-Raft architecture that allows migration between multiple Raft groups to achieve dynamic data distribution and load balancing.
+
+4. **Linear Consistency for Reads and Writes**: The system offers a Key-Value storage interface that supports linear consistency for reads and writes, ensuring clients access the latest data copy to meet strong consistency requirements.
+
+5. **Asynchronous Optimization**: The system employs asynchronous techniques such as Apply, ReadIndex, FollowerRead, and Prevote to enhance performance. This means the system can provide higher throughput without sacrificing consistency.
+
+6. **MVCC Multi-Version Concurrency Control**: The system implements Multi-Version Concurrency Control (MVCC) that allows multiple transactions to access data simultaneously without conflicts. This is based on the Precolator model, supporting high-performance distributed transactions to ensure data consistency and concurrency.
+
+In summary, this project is a robust distributed Key-Value storage system with high availability, strong consistency, high performance, partition management, and linear consistency for reads and writes. It utilizes the Raft algorithm as its core, combines asynchronous optimizations, and employs MVCC multi-version control, providing a reliable and high-performance data storage solution for distributed applications.
 
 # Supported Features
 
